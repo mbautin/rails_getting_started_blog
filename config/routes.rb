@@ -1,5 +1,7 @@
 Blog::Application.routes.draw do
-  resources :posts
+  resources :posts do
+    resources :comments
+  end
 
   get "home/index"
 
@@ -61,5 +63,4 @@ Blog::Application.routes.draw do
   # match ':controller(/:action(/:id))(.:format)'
 
   root :to => "home#index"
-
 end
