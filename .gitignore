@@ -14,4 +14,9 @@
 /log/*.log
 /tmp
 
-/.idea
+.idea
+*.iml
+/db/test
+/db/test.sqlite3
+/db/development
+/db/development.sqlite3
